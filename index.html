@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt.br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Calculadora Aritmética</title>
+    <title> Calculadora Aritmética </title>
 </head>
 <body>
     <main id="container">
         <section id="img">
-            <img src="assets/imagens/illustration.svg" alt="img">
+            <img src="./assets/imagens/illustration.svg" alt="img">
         </section>
 
         <section id="calculator">
             <form id="form">
+                <div class="btnNavigation">
+                    <a href="./pages/calcIMC.html">Calcular IMC</a>
+                </div>
                 <h1 id="title">
-                    Calculadora Aritmética
+                    Calcular Média Anual
                 </h1>
 
                 <div class="input-box">
@@ -40,6 +43,28 @@
                     <div class="input-field">
                         <!-- <i class="fa-solid fa-ruler"></i> -->
                         <input type="number"  id="segundaNota" placeholder="digite a 2° nota" required min= 0 max=10>
+                    
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="terceiraNota">
+                        Terceira Nota
+                    </label>
+                    <div class="input-field">
+                        <!-- <i class="fa-solid fa-ruler"></i> -->
+                        <input type="number"  id="terceiraNota" placeholder="digite a 3° nota" required min= 0 max=10>
+                    
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="quartaNota">
+                        Quarta Nota
+                    </label>
+                    <div class="input-field">
+                        <!-- <i class="fa-solid fa-ruler"></i> -->
+                        <input type="number"  id="quartaNota" placeholder="digite a 4° nota" required min= 0 max=10>
                     
                     </div>
                 </div>
@@ -65,7 +90,7 @@
         </section>
     </main>
 
-    <script src="assets/js/script.js"></script>
+    <script src="./assets/js/calcMedia.js"></script>
 
 </body>
 </html>
